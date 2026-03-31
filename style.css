@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* for tablet */
+@media (max-width: 768px) {
+    .card {
+        flex: 0 1 370px;
+    }
+}
+
+/* for phone */
+@media (max-width: 480px) {
+    .card {
+        flex: 0 1 420px;
+    }
+    .navbar-container {
+        flex-direction: column;
+        padding: 10px 30px;
+    }
+    .menu ul {
+        flex-direction: column;
+        margin: 0;    
+    } 
+    .navbar-container .logo {
+        font-weight: 500;
+        font-size: 1.7rem;
+        padding: 0 0 25px 0;
+    }
+    .menu ul li {
+        padding: 10px 0 0 0;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body, .cards-container, .card {
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin: 0 0 20px 0;
+    font-family: "Lato", sans-serif;
+    background: #a7a7a7;
+}
+
+.logo {
+    padding: 0px 30px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.logo, .menu a {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none; 
+
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 8px 30px 8px 30px;
+    gap: 35px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;  
+
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    
+    flex: 1 1 285px;
+    border-radius: 20px;
+    
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+
+.image-container {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.title,
+.price,
+.description {
+    margin: 0px;
+    padding: 10px;
+}
+
+.title {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.price {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;    
+}
+
+.description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: auto;
+
+    /* for the text to make sure the lines cab be max 3 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    
+    /* to make the text hidden if its too long */
+    overflow: hidden;
+}
+
+.favorite {
+    position: absolute;
+    background-color: #a7a7a7;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    color: #ffffff;
+    padding: 1px 8px;
+    border-radius: 50%;
+    top: 30px;
+    left: 0px;
+}
+
+.favorite:active {
+    color: red;
+}
+
+.new-item {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: absolute;
+    
+    color: #ffffff;
+    background: #a7a7a7;
+    padding: 4px 6px;
+    top: 70px;
+    left: 0;
+}
+
+.amount {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: absolute;
+    
+    color: #ffffff;
+    background: #a7a7a7;
+    top: 110px;
+    left: 0px;
+    padding: 2px 4px;
+}
+
+.buy-now {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px;
+    background: #a7a7a7;
+    
+    color: #ffffff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.buy-now:active {
+    background: lightslategray;
+}
+
+footer {
+    background: #a7a7a7;
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.whom-made {
+    color: #00ffff;
+    font-style: italic;
+    font-weight: bold;
+}
